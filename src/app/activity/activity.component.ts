@@ -21,55 +21,26 @@ countryId?:number;
 
 
 constructor(private instanceJsonService:JsonService,private instanceActivatedRoute:ActivatedRoute) {
+    
+}
+
+ngOnInit(): void { 
   this.instanceJsonService.getAllData().then((returnedArray:Country[]) => {
     this.arrayCountries = returnedArray;
-    console.log ("constructor Nombre de pays"+this.arrayCountries.length);
   });
-  
 
   this.countryId = this.instanceActivatedRoute.snapshot.params['id'];
 
-  
-  console.log ("constructor Nombre de pays"+this.arrayCountries.length);
   let elementCountry:Country;
-
- 
- console.log ("this.countryId"+this.countryId);
-
-  for (elementCountry of this.arrayCountries) {
-    console.log ("elementCountry.countryId"+elementCountry.id);
-       if (elementCountry.id == this.countryId) {
-        console.log ("trouvé");
-           this.arrayParticipations = elementCountry.arrayParticipations;
-       } 
+  if (this.arrayCountries.length >= 1 ) {
+      for (elementCountry of this.arrayCountries) {
+        if (elementCountry.id == this.countryId) {
+            this.arrayParticipations = elementCountry.arrayParticipations;
+          } 
+      }
+    }
   }
-}
-
-ngOnInit(): void {
-
-  this.instanceJsonService.getAllData().then((returnedArray:Country[]) => {
-    this.arrayCountries = returnedArray;
-    console.log ("ngOnInit Nombre de pays"+this.arrayCountries.length);
-  });
   
 
-  this.countryId = this.instanceActivatedRoute.snapshot.params['id'];
-
   
-  console.log ("ngOnInit Nombre de pays"+this.arrayCountries.length);
-  let elementCountry:Country;
-
- timer
- console.log ("this.countryId"+this.countryId);
-
-  for (elementCountry of this.arrayCountries) {
-    console.log ("elementCountry.countryId"+elementCountry.id);
-       if (elementCountry.id == this.countryId) {
-        console.log ("trouvé");
-           this.arrayParticipations = elementCountry.arrayParticipations;
-       } 
-  }
-       
-}
-
 }

@@ -16,6 +16,6 @@ export class CountryComponent {
   constructor(private instanceRouteur:Router) {
       }
       onClickView() {
-          this.instanceRouteur.navigateByUrl('rlChronology/'+this.inputCountry.id);
+          this.instanceRouteur.navigateByUrl('rlActivity/'+this.inputCountry.id);
         }
 }

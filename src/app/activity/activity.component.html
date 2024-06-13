@@ -1,6 +1,4 @@
-<p>activity works!</p>
-
-Nombre de pays{{arrayCountries.length}}
+<p>Liste des participations pour le pays {{ countryId }}</p>
 
 Nombre de participations:{{ arrayParticipations.length }} 
 @if ( arrayParticipations.length >= 1) {
@@ -11,52 +9,3 @@ Nombre de participations:{{ arrayParticipations.length }}
 @else {
     Pas de participations
 }
-
-<!-- 
-@if (true) {
- 
-}
-
-
-@if (false) {
-@for (elementCountry of arrayCountries;track elementCountry) {
-    {{elementCountry.id}}-{{countryId}}
-
-    @if (elementCountry.id == countryId) {
-            trouvé !
-
-    {{elementCountry.arrayParticipations.length}}
-
-        @for (elementParticipation of elementCountry.arrayParticipations;track elementParticipation) {
-            step by step
-            <app-participation [inputParticipation]="elementParticipation"></app-participation>
-        }
-    }
-}
-}
-
-@if (false) {
-
-    @if ( arrayCountries.length >= 1) {
-        @for (elementCountry of arrayCountries;track elementCountry) {
-            @if (elementCountry.id == countryId) {
-                @for (elementParticipation of arrayParticipations;track elementParticipation) {
-                    <app-participation [inputParticipation]="elementParticipation"></app-participation>
-                }
-            }
-        }
-    }
-    @else {
-        Pas de Pays
-    }
-}
-
--->
-
-<!--
-
-@for (elementParticipation of inputCountry.arrayParticipations;track elementParticipation) {
-    <app-participation [inputParticipation]="elementParticipation"></app-participation>
-}
-}
--->
