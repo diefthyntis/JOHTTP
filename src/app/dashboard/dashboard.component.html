@@ -1,0 +1,6 @@
+<h1>JOHTTP APPLICATION</h1>
+<h2>Dashboard</h2>
+Nombre de pays participants:{{arrayCountries.length}}<br>
+@for (instanceCountry of arrayCountries;track instanceCountry) {
+    <app-country [inputCountry]="instanceCountry"></app-country>
+}
