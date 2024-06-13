@@ -25,20 +25,22 @@ constructor(private instanceJsonService:JsonService,private instanceActivatedRou
 }
 
 ngOnInit(): void { 
-  this.instanceJsonService.getAllData().then((returnedArray:Country[]) => {
-    this.arrayCountries = returnedArray;
-  });
-
   this.countryId = this.instanceActivatedRoute.snapshot.params['id'];
 
-  let elementCountry:Country;
-  if (this.arrayCountries.length >= 1 ) {
+  this.instanceJsonService.getAllData().then((returnedArray:Country[]) => {
+    this.arrayCountries = returnedArray;
+    let elementCountry:Country;
+    if (this.arrayCountries.length >= 1 ) {
       for (elementCountry of this.arrayCountries) {
         if (elementCountry.id == this.countryId) {
             this.arrayParticipations = elementCountry.arrayParticipations;
           } 
       }
     }
+  });
+
+ 
+  
   }
   
 
