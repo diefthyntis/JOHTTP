@@ -22,14 +22,5 @@ export class ParticipationComponent {
     throw new Error('Method not implemented.');
     }
 
-  /*
-  constructor(
-  public participationId: number,
-  public city: string,
-  public year: string,
-  public athleteCount: number,
-  public medalsCount: number,
-  public MemberId: number,
-  public participationCode: string){}  
-  */
+  
 }
