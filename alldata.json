@@ -8,24 +8,24 @@
 "id":1,
 "year":2012,
 "city":"Londres",
-"medalsCount":28,
-"athleteCount":372,
+"medalsQuantity":28,
+"athletesQuantity":372,
 "countryId":1
 },
 {
 "id":2,
 "year":2016,
 "city":"RiodeJaneiro",
-"medalsCount":28,
-"athleteCount":375,
+"medalsQuantity":28,
+"athletesQuantity":375,
 "countryId":1
 },
 {
 "id":3,
 "year":2020,
 "city":"Tokyo",
-"medalsCount":40,
-"athleteCount":381
+"medalsQuantity":40,
+"athletesQuantity":381
 }]},
      {
         "id": 2,
@@ -35,24 +35,24 @@
             "id":1,
             "year":2012,
             "city":"Londres",
-            "medalsCount":20,
-            "athleteCount":315,
+            "medalsQuantity":20,
+            "athletesQuantity":315,
             "countryId":2
             },
             {
             "id":2,
             "year":2016,
             "city":"RiodeJaneiro",
-            "medalsCount":17,
-            "athleteCount":312,
+            "medalsQuantity":17,
+            "athletesQuantity":312,
             "countryId":2
             },
             {
             "id":3,
             "year":2020,
             "city":"Tokyo",
-            "medalsCount":17,
-            "athleteCount":321,
+            "medalsQuantity":17,
+            "athletesQuantity":321,
             "countryId":2
             }
       ]
@@ -65,24 +65,24 @@
             "id":1,
             "year":2012,
             "city":"Londres",
-            "medalsCount":109,
-            "athleteCount":610,
+            "medalsQuantity":109,
+            "athletesQuantity":610,
             "countryId":3
             },
             {
             "id":2,
             "year":2016,
             "city":"RiodeJaneiro",
-            "medalsCount":123,
-            "athleteCount":652,
+            "medalsQuantity":123,
+            "athletesQuantity":652,
             "countryId":3
             },
             {
             "id":3,
             "year":2020,
             "city":"Tokyo",
-            "medalsCount":113,
-            "athleteCount":626,
+            "medalsQuantity":113,
+            "athletesQuantity":626,
             "countryId":3
             }
       ]
@@ -96,24 +96,24 @@
     "id":1,
     "year":2012,
     "city":"Londres",
-    "medalsCount":44,
-    "athleteCount":425,
+    "medalsQuantity":44,
+    "athletesQuantity":425,
     "countryId":4
     },
     {
     "id":2,
     "year":2016,
     "city":"RiodeJaneiro",
-    "medalsCount":44,
-    "athleteCount":422,
+    "medalsQuantity":44,
+    "athletesQuantity":422,
     "countryId":4
     },
     {
     "id":3,
     "year":2020,
     "city":"Tokyo",
-    "medalsCount":37,
-    "athleteCount":425,
+    "medalsQuantity":37,
+    "athletesQuantity":425,
     "countryId":4
     }
       ]
@@ -126,24 +126,24 @@
             "id":1,
             "year":2012,
             "city":"Londres",
-            "medalsCount":35,
-            "athleteCount":423,
+            "medalsQuantity":35,
+            "athletesQuantity":423,
             "countryId":5
             },
             {
             "id":2,
             "year":2016,
             "city":"RiodeJaneiro",
-            "medalsCount":45,
-            "athleteCount":412,
+            "medalsQuantity":45,
+            "athletesQuantity":412,
             "countryId":5
             },
             {
             "id":3,
             "year":2020,
             "city":"Tokyo",
-            "medalsCount":33,
-            "athleteCount":403,
+            "medalsQuantity":33,
+            "athletesQuantity":403,
             "countryId":5
             }
       ]

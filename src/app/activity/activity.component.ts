@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { JsonService } from '../services/json.service';
 import { Country } from '../classes/country.class';
 import { ParticipationComponent } from '../participation/participation.component';
@@ -18,6 +18,7 @@ export class ActivityComponent implements OnInit {
 arrayCountries:Country[]=[];
 arrayParticipations:Participation[]=[];
 countryId?:number;
+@Input() inputCountry!:Country;
 
 
 constructor(private instanceJsonService:JsonService,private instanceActivatedRoute:ActivatedRoute) {
@@ -33,7 +34,8 @@ ngOnInit(): void {
     if (this.arrayCountries.length >= 1 ) {
       for (elementCountry of this.arrayCountries) {
         if (elementCountry.id == this.countryId) {
-            this.arrayParticipations = elementCountry.arrayParticipations;
+            this.arrayParticipations = elementCountry.participations;
+            this.inputCountry=elementCountry;
           } 
       }
     }

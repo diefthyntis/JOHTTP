@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Participation } from '../classes/participation.class';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-participation',
@@ -9,7 +10,17 @@ import { Participation } from '../classes/participation.class';
   styleUrl: './participation.component.scss'
 })
 export class ParticipationComponent {
+
   @Input() inputParticipation!:Participation;
+
+  constructor(private instanceRouteur:Router) {
+
+  }
+  onClickGoBack() {
+    this.instanceRouteur.navigateByUrl('rlDashboard');
+
+    throw new Error('Method not implemented.');
+    }
 
   /*
   constructor(

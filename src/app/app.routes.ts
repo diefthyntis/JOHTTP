@@ -4,6 +4,7 @@ import { ActivityComponent } from './activity/activity.component';
 
 export const routes: Routes = [
     { path: '',component:DashboardComponent},
-    { path: 'rlActivity/:id',component:ActivityComponent}
+    { path: 'rlActivity/:id',component:ActivityComponent},
+    { path: 'rlDashboard',component:DashboardComponent},
 
 ];

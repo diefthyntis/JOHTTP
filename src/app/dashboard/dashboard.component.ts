@@ -13,9 +13,7 @@ import { CountryComponent } from '../country/country.component';
 })
 export class DashboardComponent implements OnInit{
   arrayCountries:Country[]=[];
-  //arrayCountries!:Country[];
-
-
+  
   constructor(private instanceJsonService: JsonService) {}
 
   ngOnInit(): void {
